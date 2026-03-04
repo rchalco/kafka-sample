@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Listener.AntiFraud.Core/Listener.AntiFraud.Core.csproj" />
+  <Project Path="Listener.AntiFraud.Infrastructure/Listener.AntiFraud.Infrastructure.csproj" />
+  <Project Path="Listener.AntiFraud/Listener.AntiFraud.csproj" />
+</Solution>

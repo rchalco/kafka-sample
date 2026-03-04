@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Api.Transaction.Core/Api.Transaction.Core.csproj" />
+  <Project Path="Api.Transaction.Infrastructure/Api.Transaction.Infrastructure.csproj" />
+  <Project Path="Api.Transaction/Api.Transaction.csproj" />
+</Solution>

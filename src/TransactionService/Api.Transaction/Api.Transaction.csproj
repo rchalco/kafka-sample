@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>4435e7be-bd00-493a-9740-02e1505d521c</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Api.Transaction.Core/**/*.cs" />
+    <Compile Remove="Api.Transaction.Infrastructure/**/*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../Api.Transaction.Core/Api.Transaction.Core.csproj" />
+    <ProjectReference Include="../Api.Transaction.Infrastructure/Api.Transaction.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

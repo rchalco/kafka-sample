@@ -1,0 +1,28 @@
+{
+  "name": "Yape prueba lider tech",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "app",
+  "runServices": [
+    "app",
+    "postgres",
+    "kafka",
+    "api-transaction",
+    "listenet-antifraud",
+    "kafka-ui"
+  ],
+  "shutdownAction": "stopCompose",
+  "workspaceFolder": "/workspace",
+  "features": {
+    "ghcr.io/devcontainers/features/dotnet:1": {
+      "version": "8.0"
+    },
+    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
+      "version": "latest"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-dotnettools.csharp", "ms-azuretools.vscode-docker"]
+    }
+  }
+}

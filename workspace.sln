@@ -1,0 +1,70 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{827E0CD3-B72D-47B6-A68D-7590B98EB39B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AntiFraudService", "AntiFraudService", "{B315A3E3-07E5-0FA6-B0FC-7330E7978CDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Listener.AntiFraud", "src\AntiFraudService\Listener.AntiFraud\Listener.AntiFraud.csproj", "{0708FD8E-42AC-321C-4425-0ECC91735BA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Listener.AntiFraud.Core", "src\AntiFraudService\Listener.AntiFraud.Core\Listener.AntiFraud.Core.csproj", "{EDAC0B6E-3C54-33DD-0D6F-833ACAA4EE81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Listener.AntiFraud.Infrastructure", "src\AntiFraudService\Listener.AntiFraud.Infrastructure\Listener.AntiFraud.Infrastructure.csproj", "{ACB33C1E-A1C4-46BF-5388-4AC4431FA540}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TransactionService", "TransactionService", "{B88E4BFF-E6A5-AD27-4BCA-E1E175C48C7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Transaction", "src\TransactionService\Api.Transaction\Api.Transaction.csproj", "{CD61A43A-0BA9-5C87-1314-9E6A788C652E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Transaction.Core", "src\TransactionService\Api.Transaction.Core\Api.Transaction.Core.csproj", "{EE8469A5-D299-68EA-3066-57BB1B9F2AB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Transaction.Infrastructure", "src\TransactionService\Api.Transaction.Infrastructure\Api.Transaction.Infrastructure.csproj", "{5A36CCD6-680A-0350-B50A-985430D9DAD6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0708FD8E-42AC-321C-4425-0ECC91735BA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0708FD8E-42AC-321C-4425-0ECC91735BA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0708FD8E-42AC-321C-4425-0ECC91735BA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0708FD8E-42AC-321C-4425-0ECC91735BA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDAC0B6E-3C54-33DD-0D6F-833ACAA4EE81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDAC0B6E-3C54-33DD-0D6F-833ACAA4EE81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDAC0B6E-3C54-33DD-0D6F-833ACAA4EE81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDAC0B6E-3C54-33DD-0D6F-833ACAA4EE81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACB33C1E-A1C4-46BF-5388-4AC4431FA540}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACB33C1E-A1C4-46BF-5388-4AC4431FA540}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACB33C1E-A1C4-46BF-5388-4AC4431FA540}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACB33C1E-A1C4-46BF-5388-4AC4431FA540}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD61A43A-0BA9-5C87-1314-9E6A788C652E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD61A43A-0BA9-5C87-1314-9E6A788C652E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD61A43A-0BA9-5C87-1314-9E6A788C652E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD61A43A-0BA9-5C87-1314-9E6A788C652E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE8469A5-D299-68EA-3066-57BB1B9F2AB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE8469A5-D299-68EA-3066-57BB1B9F2AB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE8469A5-D299-68EA-3066-57BB1B9F2AB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE8469A5-D299-68EA-3066-57BB1B9F2AB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A36CCD6-680A-0350-B50A-985430D9DAD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A36CCD6-680A-0350-B50A-985430D9DAD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A36CCD6-680A-0350-B50A-985430D9DAD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A36CCD6-680A-0350-B50A-985430D9DAD6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B315A3E3-07E5-0FA6-B0FC-7330E7978CDB} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
+		{0708FD8E-42AC-321C-4425-0ECC91735BA4} = {B315A3E3-07E5-0FA6-B0FC-7330E7978CDB}
+		{EDAC0B6E-3C54-33DD-0D6F-833ACAA4EE81} = {B315A3E3-07E5-0FA6-B0FC-7330E7978CDB}
+		{ACB33C1E-A1C4-46BF-5388-4AC4431FA540} = {B315A3E3-07E5-0FA6-B0FC-7330E7978CDB}
+		{B88E4BFF-E6A5-AD27-4BCA-E1E175C48C7E} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
+		{CD61A43A-0BA9-5C87-1314-9E6A788C652E} = {B88E4BFF-E6A5-AD27-4BCA-E1E175C48C7E}
+		{EE8469A5-D299-68EA-3066-57BB1B9F2AB2} = {B88E4BFF-E6A5-AD27-4BCA-E1E175C48C7E}
+		{5A36CCD6-680A-0350-B50A-985430D9DAD6} = {B88E4BFF-E6A5-AD27-4BCA-E1E175C48C7E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {35B1559F-DF38-49D4-ACE8-464B44F208C7}
+	EndGlobalSection
+EndGlobal
