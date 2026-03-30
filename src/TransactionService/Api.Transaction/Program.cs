@@ -54,6 +54,14 @@ app.MapGet("/health/kafka", (IConfiguration configuration) =>
     }
 });
 
+app.MapGet("/hello", async (
+    string nameUser,
+    CancellationToken cancellationToken) =>
+{
+    return Results.Ok(new { message = $"Hello, {nameUser}!" });
+});
+
+
 app.MapPost("/transactions", async (
     CreateTransactionRequest request,
     ITransactionRepository repository,

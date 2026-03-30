@@ -11,4 +11,6 @@ public interface ITransactionCreatedConsumer : IDisposable
     void Subscribe();
     TransactionCreatedMessage? Consume(TimeSpan timeout);
     void Close();
+
+    public void Commit();
 }

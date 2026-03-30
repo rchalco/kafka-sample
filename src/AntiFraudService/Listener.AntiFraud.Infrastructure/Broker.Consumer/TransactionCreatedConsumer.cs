@@ -24,7 +24,7 @@ public class TransactionCreatedConsumer : ITransactionCreatedConsumer
             BootstrapServers = configuration["KAFKA_BOOTSTRAP_SERVERS"] ?? "kafka:29092",
             GroupId = configuration["KAFKA_CONSUMER_GROUP"] ?? "antifraud-group",
             AutoOffsetReset = AutoOffsetReset.Earliest,
-            EnableAutoCommit = true
+            EnableAutoCommit = false
         };
 
         _consumer = new ConsumerBuilder<Ignore, string>(config).Build();
@@ -65,6 +65,8 @@ public class TransactionCreatedConsumer : ITransactionCreatedConsumer
     }
 
     public void Close() => _consumer.Close();
+
+    public void Commit() => _consumer.Commit();
 
     public void Dispose() => _consumer.Dispose();
 }

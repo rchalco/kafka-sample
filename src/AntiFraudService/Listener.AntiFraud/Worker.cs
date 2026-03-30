@@ -10,6 +10,7 @@ public class Worker(
     IValidationTransactionService validationService,
     ITransactionStatusPublisher publisher) : BackgroundService
 {
+
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
         consumer.Subscribe();
@@ -37,9 +38,11 @@ public class Worker(
                 logger.LogInformation(
                     "Transaction {TransactionId} evaluated with status {Status}",
                     evaluation.TransactionExternalId,
-                    evaluation.Status);
+                    evaluation.Status);                
 
                 await publisher.PublishAsync(evaluation.TransactionExternalId, evaluation.Status);
+
+                consumer.Commit();
             }
             catch (OperationCanceledException) { break; }
             catch (Exception ex)
